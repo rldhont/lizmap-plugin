@@ -29,7 +29,7 @@ rich==15.0.0
 ruff==0.15.20
 six==1.17.0
 stevedore==5.8.0 ; python_full_version < '3.11'
-stevedore==5.9.0 ; python_full_version >= '3.11'
+stevedore==5.9.1 ; python_full_version >= '3.11'
 tomli==2.4.1 ; python_full_version < '3.11'
 typing-extensions==4.16.0
 tzdata==2026.2 ; sys_platform == 'win32'
