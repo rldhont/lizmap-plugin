@@ -10,7 +10,7 @@ lxml==6.1.1
 packaging==26.2
 pluggy==1.6.0
 psycopg==3.3.4
-psycopg-binary==3.3.4 ; implementation_name != 'pypy'
+psycopg-binary==3.3.5 ; implementation_name != 'pypy'
 pygments==2.20.0
 pytest==9.1.1
 python-dateutil==2.9.0.post0
