@@ -83,6 +83,11 @@ class TestEditionDialog(TestCase):
         dialog = AtlasEditionDialog()
         self.assertFalse(dialog.error.isVisible())
 
+        self.assertEqual(dialog.layer.count(), 2)
+        self.assertEqual(dialog.layer.currentIndex(), 0)
+        if layer.id() != dialog.layer.currentLayer().id():
+            dialog.layer.setLayer(layer)
+        self.assertEqual(dialog.layer.currentLayer().id(), layer.id())
         self.assertEqual(dialog.primary_key.currentField(), "id")
 
         self.assertEqual(
